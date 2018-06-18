@@ -1,0 +1,210 @@
+<html>
+<head><title>ITR Home</title>
+
+<link type="text/css" rel="stylesheet" href="../../Common/css/jquery-ui.min.css">
+<script src="../../Common/scripts/jquery-1.8.0.js"></script>
+<script src="../../Common/scripts/jquery-ui.js"></script>
+<style type="text/css">
+body {
+    border: 0 none;
+    color: #333333;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 0.8em;
+    margin: auto;
+    padding: 0;
+    vertical-align: top;
+}
+.headerText{
+ color: #01578A;
+    float: right;
+    font-size: 2.6em;
+    padding-right: 105px;
+    padding-top: 25px;
+   font-family: icon;
+}
+html, body {
+    height: 100%;
+}
+
+.grid{ 
+background: none repeat scroll 0 0 #DBDCDE;
+border: 1px solid #CCCCCC;
+}
+.grid tr:nth-child(2n+1) {
+    background: none repeat scroll 0 0 #F0F0F0;
+}
+h3, table caption, table th {
+    background: url("bg.png") repeat-x scroll left -377px #DBDCDE;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+
+    font-weight: 80;
+    padding: 5px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.grid tr:nth-child(2n) td, .grid tr:nth-child(2n+1) td {
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #FFFFFF;
+}
+.grid td {
+    padding: 5px;
+    vertical-align: top;
+    text-align: left;
+	 border: 1px solid #CCCCCC;
+}
+#container{
+width: 95%;
+padding-top:10px;
+}
+.mart15 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+.logorow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border: 5px solid #01578A;
+    border-image: none;
+    float: left;
+    padding: 0 10px;
+    width: auto;
+ margin: 0 auto -100px;
+    height:700px;
+}
+#container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: auto !important;
+    margin: 0 auto -100px;
+    min-height: 100%;
+
+}
+.grayBack{
+ background: url("bg.png") repeat-x scroll left -432px transparent;
+    width: auto;
+    border: 5px solid #01578A;
+}
+
+.fl-l{
+   float: left;
+}
+.borderSolid{
+	border: 1px solid;
+	margin: 10px;
+}
+#firstPage li{
+	line-height:17px;
+}
+#noXml{
+padding:10px;
+}
+.ui-tabs .ui-tabs-nav li a{
+	padding:1.2em 1.2em;
+}
+.ui-tabs .ui-tabs-panel{
+	padding:10px;
+	line-height:20px;
+}
+.tabheading{
+	font-weight:bold;
+	font-size:14px;
+	
+}
+.ui-state-active, .ui-widget-content .ui-state-active{
+	border:1px solid #000000;
+}
+</style>
+
+</head>
+<body>
+
+
+<form autocomplete="off" >
+
+<div  id="container">
+
+
+<div id="tabs" style="font:inherit;">
+<ul>
+<li><a href="#tab1"><span class="tabheading">How to use this Form?</span></a></li>
+<li><a href="#tab2"><span class="tabheading">Short Keys</span></a></li>
+<li><a href="#tab3"><span class="tabheading">Settings</span></a></li>
+
+</ul>
+<div id="tab1">
+
+These Forms are developed using the latest in JAVA technology and effort has been made to make it user friendly, simpler and faster preparation of tax returns. This utility can be run on operating systems like Windows 7.0 or above and latest Linux, where Java Runtime Environment Version 7 Update 6 (jre 1.7 is also known as jre version 7) or above is installed.
+<br>
+<br>
+
+
+The following are features available in the Form. 
+<ol>
+<li><b>New</b> - On click of this button, a new copy of the form will be available. If you have already  opened the form, you will be prompted to save the earlier copy.</li>
+<li><b>Open</b> - This option is for importing the XML (successfully generated earlier) of a particular A.Y. Select the path and import the XML. You should check/validate the contents before finalizing upload/submission.</li>
+<li><b>Save</b> - The XML will be stored in the path you have selected.</li>
+<li><b>Save Draft</b> - The unfinished work can be saved as ".draft " extension in the path you have selected. Please note that you cannot submit this file without filling the complete details.</li>
+<li><b>Prefill</b> - This option can be used to auto-fill your Personal, Address and Tax details. You will be prompted to provide your User ID, Password and DOB/DOI to fetch the data. It is advisable to complete this activity before you start entering other data. Please check/validate the contents. Please make sure you're connected to the internet to avail this feature. </li>
+<li><b>Re-Calculate</b> - On clicking this button, the data in the utility will be re-calculated. This is to provide with the utility based calculation/validation.</li>
+<li><b>Submit</b> - Click this button to upload the XML in e-Filing portal. You'll be prompted to provide your e-Filing credentials, User ID, Password and DOB/DOI. Post submission, the success message and the acknowledgment number will be displayed. You will be able to download ITR-V or e-Verify your return. Please make sure you're connected to the internet to avail this feature.</li>
+<li><b>Preview</b> - This option is used to view/print the ITR in browser.</li>
+<li><b>Help</b> - This option will let you know the shortkeys, instructions, settings and how to use this form.</li>
+<li><b>Previous/Next</b> - These will help you to navigate to the various tabs of the ITR form.</li>
+
+</ol>
+
+</div>
+
+
+<div id="tab2" >
+<table class="grid"  width="100%">
+<tr><th>S.No.</th><th>Action</th><th>Short Key</th></tr>
+<tr>	<td>1</td><td> Alt + N</td><td>Opens a new ITR</td></tr>
+		<tr><td>2</td><td> Alt + S</td><td>Saves the ITR in the user desired path</td></tr>
+	<tr><td>3</td><td> Alt + X</td><td>Closes the utility</td></tr>
+	<tr><td>4</td><td> Alt + I</td><td>Imports the XML file</td> </tr>
+	<tr><td>5</td><td> Alt + F</td><td>Pre-fills the ITR</td></tr>
+	<tr><td>6</td><td> Alt + C</td><td>Clears the validation errors</td></tr>
+	<tr><td>7</td><td> Alt + D</td><td>Hides/Shows the validation window</td> </tr>
+	<tr><td>8</td><td> Alt + G</td><td>Opens the SUBMIT screen to submit the ITR</td></tr>
+	<tr><td>9</td><td>Alt + R</td><td>Re-calculates the tax details as per the Utility</td></tr>
+	<tr><td>10</td><td>Alt + P</td><td>View/Print the ITR in browser</td></tr>
+</table>	
+</div>
+
+<div id="tab3" >
+	Following are the recomended settings to use the ITR Utility :
+	<br>
+	<br>
+
+	<strong>Softwares: </strong>
+	<br>
+	Java Runtime Environment Version 7 Update 6 (jre 1.7 is also known as jre version 7) or above
+	<br>Any Zip Software to unzip the utility
+	<br>
+	<br>
+	<strong>Internet Connection:</strong>
+	<br>Minimum bandwidth of 256 kbps and above
+	<br>
+	<br>
+	
+	
+	
+</div>
+
+</div>
+
+
+</div>
+</form>
+<script type="text/javascript">
+$(function() {
+$( "#tabs" ).tabs();
+});
+
+</script>
+</body>
+</html>

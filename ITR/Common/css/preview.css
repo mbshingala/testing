@@ -1,0 +1,108 @@
+.addbtn{
+    display: none;
+}
+.removeButton{
+    display: none;
+}
+.ui-corner-all{
+	display: none;
+}
+.ui-datepicker-calendar{
+	display: none;
+}
+.spanValRightAlign{
+	font-size:14px;
+	font-weight:bold;
+	text-align: right;
+	display:block;
+}
+.eFSpanVal{
+    
+	font-size:14px;
+	font-weight:bold;
+}
+.regForm{
+	width: auto;
+	padding:0px;
+}
+.regForm .content{
+border-radius:10px;
+padding-top:1px;
+}
+#container{
+margin:0 auto 0px;
+}
+#header, #container, #footer, #bodyContent{
+width:auto;
+padding:0;
+}
+.grid td{
+	font-size:15px;
+	border: 1px solid;
+}
+.rightColumn{
+	width:auto;
+}
+
+.grid tr{
+    border: 1px solid #CCCCCC;
+}
+
+.grid {
+     border: 1px solid #CCCCCC;
+	 border-collapse: collapse;
+    
+}
+
+.hd h4 {
+    background: none repeat scroll 0 0 #F0F0F0;
+}
+
+.brHide {
+    display: none
+}
+
+.previewTable{
+    border: 1px solid #CCCCCC;
+	 border-collapse: collapse;
+}
+
+.previewTable td{
+	font-size:15px;
+	border: 1px solid;
+}
+.previewTable tr{
+    border: 1px solid #CCCCCC;
+}
+.pointsDescription{
+    display: inline;
+}
+.hideSpan{
+    display:none;
+}
+.pointsNumber{
+	display: inline;
+}
+.dispBlockSpan{
+	display:inline;
+}
+.gridPlain td{
+	font-size:15px;
+	border: 1px solid;
+}
+
+.gridPlain tr{
+    border: 1px solid #CCCCCC;
+}
+
+.gridPlain {
+     border: 1px solid #CCCCCC;
+	 border-collapse: collapse;
+    
+}
+
+.hiddenAnnexure{
+	display: ;
+}
+.disp-none{display:none}
+.disp-block{display:block}
