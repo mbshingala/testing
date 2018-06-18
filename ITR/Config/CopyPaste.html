@@ -1,0 +1,131 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<style type="text/css">
+.textField{
+	width:auto;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+<table id="copyPaste" border="1">
+
+</table>
+</div>
+
+<script type="text/javascript">
+
+function startNewTable(){
+	var table=document.getElementById('copyPaste');
+	table.innerHTML='';
+}
+
+function addColumn(column){
+	var table=document.getElementById('copyPaste');
+	if(table.rows.length==0){
+		table.insertRow(0);
+	}
+	var row=table.rows[0];
+	
+	row.insertCell(-1).innerHTML=column;
+	
+}
+var table=document.getElementById('copyPaste');
+function addDummyRows(noRows){
+	if(noRows==undefined){
+		noRows=100;
+	}else if(isNaN(noRows)){
+            	noRows=100;
+        }
+	var table=document.getElementById('copyPaste');
+	var cellLength=table.rows[0].cells.length;
+	var rowLength=table.rows.length;
+	for(var i=0;i<noRows;i++){
+		var row=table.insertRow(-1);
+		for(var j=0;j<cellLength;j++){
+			if(j==0){
+				row.insertCell(-1).innerHTML=rowLength+i;
+			}else{
+				var text=document.createElement('input');
+				text.setAttribute('class','textField');
+				text.setAttribute('OnKeyDown','return checkControlVDown(event,this)');
+				row.insertCell(-1).appendChild(text);
+			}
+		}
+	}
+}
+
+function setCellValue(row,cell,value){
+try{
+	table.rows[row].cells[cell].children[0].value=value;
+	}catch(e){alert(e);}
+}
+
+
+var arr=new Array();
+function checkControlVDown(e,field){
+    
+        if(e.keyCode==17){
+            arr=new Array();
+            arr[0]=17;
+        }else if(arr.length<2){
+		arr[arr.length]=e.keyCode;
+	}
+        alert('code: '+e.keyCode+' arrlength: '+arr);
+	if(arr.length==2){
+		if(arr[0]==17 && arr[1]==86){
+			j.copyData(field.parentNode.parentNode.children[0].textContent,'0');
+			arr=new Array();
+			return false;
+		}
+		arr=new Array();
+		
+	}
+	return true;
+}
+
+function getNameVals(){
+	
+	var totalCols=table.rows[0].cells.length;
+	var totalRows=table.rows.length;
+       
+	var arr=new Array();
+	var obj;
+	var totalCopyCount=0;
+	for(var i=1;i<totalRows;i++){
+		var cellNonEmptyCount=0;
+		obj=new Array();
+		for(var j=1;j<totalCols;j++){
+			var val=table.rows[i].cells[j].children[0].value;                        
+			obj[obj.length]=val;
+			if(val.trim().length!=0){
+				cellNonEmptyCount++;
+			}
+		}
+		if(cellNonEmptyCount>0){
+			arr[totalCopyCount++]=obj;   
+                        alert("arr[totalCopyCount].."+obj);
+		}
+		
+	}        
+	return arr;
+}
+
+ function tableRowCount(tablId){
+      var mytable = document.getElementById(tablId);
+      var rowNumber = mytable.rows.length;
+      return rowNumber;
+ }
+
+
+</script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,119 @@
+<html>
+    <head>
+	<style type="text/css">
+	#itrvPath{
+		background-color:#D3D3D3;
+		text-align:center;
+		width:100%;
+		padding:6px;
+	}
+	#fileSave{	
+		width:100%;
+		bottom:0;
+		position:fixed;
+	}
+	</style>
+	</head>
+    <body>
+        <div id="result">
+<h3 align="center">ITR submitted successfully</h3>
+
+
+		<div class="mart10" id="withoutDsc" style="display:none;">
+				<p>
+					Your Return has been successfully uploaded and the 
+					Transaction ID is: <span class="res_vals" id="res_transactionId_span"></span>
+					 
+				</p>
+				<p>
+					An e-mail confirming the successful submission of your Return along with 
+					the Acknowledgment number and ITR-V has been sent to <span class="res_vals" id="res_emailId_span"></span>
+				<p>	<a href="#" onclick="main.downloadITRV()"> Click Here </a> to download ITR-V.
+				</p>
+					<p>
+						Please send the verified and signed ITR-V to the Income-Tax Department 
+						by ordinary post OR speed post ONLY within a period of 120 days from the 
+						date of transmitting the data electronically. 
+					</p>
+					<p>
+						<strong>Address</strong><br/>
+						Centralized Processing Center, <br/>
+						Income Tax Department, <br/>
+						Bengaluru - 560 500
+					</p>
+					
+					<p>
+						On receipt of ITR-V, your Return will be sent for Processing.
+					</p>
+				<p>	You can also view/print/download the ITR-V and other details of your returns by logging into e-Filing portal.				
+</p>
+
+					<p>Alternatively, the return can also be e-Verified. Please refer the EVC User Manual in Help Section of e-Filing Portal.</p>
+
+		</div>
+		
+		<div class="mart10" id="withDsc" style="display:none;">
+				<p>
+					Your Return has been successfully uploaded and the 
+					Transaction ID is: <span class="res_vals" id="res_dsc_transactionId_span"></span>
+					
+				</p>
+				<p>	An e-mail confirming the successful submission of your Return alongwith the Acknowledgment has been sent to <span class="res_vals" id="res_dsc_emailId_span"></span>.
+					</p>
+				<p>
+					<a href="#" onclick="main.downloadITRV()"> Click Here </a> to download
+					Acknowledegement.				
+				</p>
+					<p>
+						No further action needed from your side. Your Return will be sent for Processing.
+					</p>	
+
+<p>	You can also view/print/download the Acknowledegement and other details of your returns by logging into e-Filing portal.				
+</p>
+		</div>
+		
+		<div id="fileSave">
+		<div id="itrvPath" style="display:none">File saved successfully.</div>
+		</div>
+	
+<div style="text-align:center;">
+<input type="button" value="Ok" name="backToSubmit" onclick="main.ok()" />
+</div>
+</div>
+        
+        <script type="text/javascript">
+            function enableWithDsc(dsc,tranId,email){
+                if('Y'==dsc){
+                    document.getElementById('withDsc').style.display="block";
+                    document.getElementById('res_dsc_transactionId_span').innerHTML=tranId;
+                    document.getElementById('res_dsc_emailId_span').innerHTML=email;
+                }else{
+                    document.getElementById('withoutDsc').style.display="block";
+                    document.getElementById('res_transactionId_span').innerHTML=tranId;
+                    document.getElementById('res_emailId_span').innerHTML=email;
+                }
+            }
+			var interval;
+			function saveITRVDone(){
+			var div=document.getElementById('itrvPath');
+			div.style.display='block';
+				interval=setInterval(showDiv,2000);
+				
+			}
+			
+			function showDiv(){
+			
+			var div=document.getElementById('itrvPath');
+				if(div.style.display=='none'){
+					div.style.display='block';
+				}else{
+					div.style.display='none';
+					clearInterval(interval);
+				}
+			}
+           
+            
+        </script>
+    </body>
+    
+</html>

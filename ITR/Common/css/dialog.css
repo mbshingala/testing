@@ -1,0 +1,123 @@
+.dialog-root {
+ 
+    -fx-border-width: 1;
+    -fx-border-radius: 5 5 0 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 11, 0.0, 3, 3);
+    -fx-border-color: #a3a3a3;
+}
+
+.dialog .header {
+    -fx-background-radius: 5 5 0 0;
+    -fx-background-insets: -1 -1 0 -1;
+    -fx-background-color: linear-gradient(#595959, #474747 37%, #343434);
+    -fx-padding: 5 68 5 68;
+    -fx-alignment: center;
+}
+
+.dialog .title {
+    -fx-text-fill: #ebebeb;
+    -fx-font-weight: bold;
+
+}
+
+.dialog .button-panel {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-background-color: linear-gradient(#e2e2e2,#e2e2e2,#eeeeee);
+    -fx-alignment: center;
+}
+
+.dialog .message-panel {
+    -fx-padding: 50 10;
+    -fx-background-color: white;
+    -fx-alignment: center;
+}
+
+.error-popup {
+    -fx-padding : 4 5 ;
+    -fx-background-color: #f57900, #fff79c;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 0 0 4 4, 0 0 3 3;
+    -fx-border-width: 2;
+}
+
+.error-popup .label {
+    -fx-font-size: 11px;
+}
+
+.error-bg{
+    -fx-background-color: #ffcccc
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#020b02, #3a3a3a);
+}
+.button{
+-fx-background-color:#006666;      
+    
+    -fx-font-family: "Helvetica";
+    -fx-border-color: #152023;
+    -fx-border-width: 1px;
+	-fx-border-style: solid;
+	-fx-border-radius:2;
+	-fx-border-insets:1;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+   
+}
+#hboxMenu .toggle-button{
+-fx-font-weight: bold;
+}
+#hboxMenu .button:pressed{
+-fx-background-color:#000000;      
+   
+}
+#hboxMenu .button:focused{
+-fx-background-color:#000000;      
+   
+}
+#hboxMenu  .button:hover {
+    -fx-background-color: linear-gradient(#020b02, #3a3a3a);
+}
+#ValidationVBox{
+	-fx-border-color: #006666;
+    -fx-border-width: 2px;
+	-fx-border-style: solid;
+}
+#buttonMenu{
+	 -fx-background-color: linear-gradient(#3A5058, #6aa2b1);
+}
+#validationHbox{
+-fx-background-color: linear-gradient(#3A5058, #6aa2b1);
+}
+#AnchorPane{
+-fx-background-color: linear-gradient(#FFFFFF,#F4F4F4);
+}
+#dialogVbox{
+	-fx-border-color: #152023;
+    -fx-border-width: 2px;
+	
+}
+.red-focused-class {
+    -fx-background-color: red, -fx-text-box-border, -fx-control-inner-background;
+}
+.red-focused-Vbox{
+	-fx-border-color: red;
+}
+.red-focused-Vbox-White{
+	-fx-border-color: white;
+}
+
+.heading{
+-fx-font-weight: bold;
+}
+#heading{
+-fx-font-weight: bold;
+}
+
+.disp-none{
+	display:none;
+}
+
+
